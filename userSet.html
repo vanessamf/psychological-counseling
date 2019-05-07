@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0,minimum-scale=1.0,user-scalable=0" />
+        <title>账号设置</title>
+        <link rel="stylesheet" type="text/css" href="css/weui.min.css" />
+        <link rel="stylesheet" type="text/css" href="css/reset.css" />
+        <link rel="stylesheet" type="text/css" href="css/index.css" />
+        <link rel="stylesheet" type="text/css" href="fonts/iconfont.css" />
+        <script src="http://g.tbcdn.cn/mtb/lib-flexible/0.3.4/??flexible_css.js,flexible.js"></script>
+    </head>
+
+    <body>
+        <div class="container">
+            <header class="header content-header">
+                <a href="javascript:history.back(-1)" class="back">
+                    <i class="iconfont icon-fanhui1"></i>
+                </a>
+                <span>账号设置</span>
+            </header>
+
+            <div class="user-set-container">
+                <div class="user-set-content weui-cells">
+                    <a href="javascript:void(0);" class="weui-cell weui-cell_access">
+                        <div class="weui-cell__bd">
+                            <span>更换手机号</span>
+                        </div>
+                        <div class="weui-cell__ft">
+                            13022421488
+                        </div>
+                    </a>
+                    <a href="javascript:void(0);" class="weui-cell weui-cell_access">
+                        <div class="weui-cell__bd">
+                            <span>修改密码</span>
+                        </div>
+                        <div class="weui-cell__ft">
+                            未设置
+                        </div>
+                    </a>
+                    <a href="javascript:void(0);" class="weui-cell weui-cell_access">
+                        <div class="weui-cell__bd">
+                            <span>安全锁设置</span>
+                        </div>
+                        <div class="weui-cell__ft">未设置</div>
+                    </a>
+                    <a href="javascript:void(0);" class="weui-cell weui-cell_access">
+                        <div class="weui-cell__bd">
+                            <span>绑定微信</span>
+                        </div>
+                        <div class="weui-cell__ft">已绑定</div>
+                    </a>
+                    <a href="javascript:void(0);" class="weui-cell weui-cell_access">
+                        <div class="weui-cell__bd">
+                            <span>账号注销</span>
+                        </div>
+                        <div class="weui-cell__ft"></div>
+                    </a>
+                </div>
+                <a href="javascript:;" class="exit-btn weui-btn">退出登录</a>
+            </div>
+        </div>
+    </body>
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/index.js"></script>
+    <script type="text/javascript" class="searchbar js_show">
+        $(function() {
+            var $searchBar = $('#searchBar'),
+                $searchResult = $('#searchResult'),
+                $searchText = $('#searchText'),
+                $searchInput = $('#searchInput'),
+                $searchClear = $('#searchClear'),
+                $searchCancel = $('#searchCancel');
+
+            function hideSearchResult() {
+                $searchResult.hide();
+                $searchInput.val('');
+            }
+
+            $searchClear.on('click', function() {
+                hideSearchResult();
+                $searchInput.focus();
+            });
+        });
+    </script>
+    <script type="text/javascript">
+        $(".article-footer .handle div").on('click', function() {
+            $(this).toggleClass("active");
+        });
+    </script>
+
+</html>

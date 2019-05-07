@@ -1,0 +1,43 @@
+/*清零*/
+body,div,dl,dt,ul,li,h1,h2,h3,h4,h5,h6,input,form,a,p,textarea{
+        margin:0;
+        padding:0;
+        /*font-family:"arial, helvetica, sans-serif","微软雅黑";*/
+        /*font-family: 'STHeiti', 'Microsoft YaHei', Helvetica, Arial, sans-serif !important;*/
+        font-family: 'PingFang SC', 'Microsoft YaHei', '微软雅黑', STHeiti, sans-serif !important;
+       /*font-family:  12px/1.5 'PingFang SC', 'Microsoft YaHei', '微软雅黑', STHeiti, sans-serif*/
+}
+
+ol,ul,li{
+        list-style:none;
+}
+
+a{
+        text-decoration:none;
+        display:block;
+        color:#fff;
+}
+a:hover{
+    text-decoration:none !important;
+}
+img{
+        border:none;
+        display:block;
+}
+input,select,textarea{
+    outline:none;
+    border:none;
+    background:none;/*解决ie6的问题*/
+}
+
+/*清除浮动 或者是clearfix*/
+.clearfloat{
+        zoom:1;
+}
+.clearfloat:after{
+        display:block;
+        clear:both;
+        content: "";
+        visibility:hidden;
+        height:0;
+}

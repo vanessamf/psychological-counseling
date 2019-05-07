@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0,minimum-scale=1.0,user-scalable=0" />
+        <title>个人信息</title>
+        <link rel="stylesheet" type="text/css" href="css/weui.min.css" />
+        <link rel="stylesheet" type="text/css" href="css/reset.css" />
+        <link rel="stylesheet" type="text/css" href="css/index.css" />
+        <link rel="stylesheet" type="text/css" href="fonts/iconfont.css" />
+        <script src="http://g.tbcdn.cn/mtb/lib-flexible/0.3.4/??flexible_css.js,flexible.js"></script>
+    </head>
+
+    <body>
+        <div class="container">
+            <header class="header content-header">
+                <a href="javascript:history.back(-1)" class="back">
+                    <i class="iconfont icon-fanhui1"></i>
+                </a>
+                <span>个人信息</span>
+            </header>
+
+            <div class="user-set-container">
+                <div class="user-info-content weui-cells">
+                    <a href="javascript:void(0);" class="weui-cell weui-cell_access">
+                        <div class="weui-cell__bd">
+                            <span>头像</span>
+                        </div>
+                        <div class="weui-cell__ft avatar">
+                            <img src="images/891341.jpg"/>
+                        </div>
+                    </a>
+                    <a href="javascript:void(0);" class="weui-cell weui-cell_access">
+                        <div class="weui-cell__bd">
+                            <span>昵称</span>
+                        </div>
+                        <div class="weui-cell__ft">
+                            按时发空间
+                        </div>
+                    </a>
+                    <a href="javascript:void(0);" class="weui-cell weui-cell_access">
+                        <div class="weui-cell__bd">
+                            <span>年龄</span>
+                        </div>
+                        <div class="weui-cell__ft">24</div>
+                    </a>
+                    <a href="javascript:void(0);" class="weui-cell weui-cell_access">
+                        <div class="weui-cell__bd">
+                            <span>性别</span>
+                        </div>
+                        <div class="weui-cell__ft">女</div>
+                    </a>
+                    <a href="javascript:void(0);" class="weui-cell weui-cell_access">
+                        <div class="weui-cell__bd">
+                            <span>所在地</span>
+                        </div>
+                        <div class="weui-cell__ft">江苏 苏州</div>
+                    </a>
+                    <a href="javascript:void(0);" class="user-intro weui-cell weui-cell_access">
+                        <div class="weui-cell__bd">
+                            <span>简单介绍一下自己</span>
+                        </div>
+                        <!--<div class="weui-cell__ft"></div>-->
+                        <div class="intro-content">
+                            简单介绍一下自己简单介绍一下自己简单介绍一下自己简单介绍一下自己
+                        </div>
+                    </a>
+                </div>
+                <a href="javascript:;" class="save-btn weui-btn">保存</a>
+            </div>
+        </div>
+    </body>
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/index.js"></script>
+    <script type="text/javascript" class="searchbar js_show">
+        $(function() {
+            var $searchBar = $('#searchBar'),
+                $searchResult = $('#searchResult'),
+                $searchText = $('#searchText'),
+                $searchInput = $('#searchInput'),
+                $searchClear = $('#searchClear'),
+                $searchCancel = $('#searchCancel');
+
+            function hideSearchResult() {
+                $searchResult.hide();
+                $searchInput.val('');
+            }
+
+            $searchClear.on('click', function() {
+                hideSearchResult();
+                $searchInput.focus();
+            });
+        });
+    </script>
+    <script type="text/javascript">
+        $(".article-footer .handle div").on('click', function() {
+            $(this).toggleClass("active");
+        });
+    </script>
+
+</html>

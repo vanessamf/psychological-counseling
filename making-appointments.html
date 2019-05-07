@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0,minimum-scale=1.0,user-scalable=0" />
+        <title>预约咨询</title>
+        <link rel="stylesheet" type="text/css" href="css/weui.min.css" />
+        <link rel="stylesheet" type="text/css" href="css/reset.css" />
+        <link rel="stylesheet" type="text/css" href="css/index.css" />
+        <link rel="stylesheet" type="text/css" href="fonts/iconfont.css" />
+        <script src="http://g.tbcdn.cn/mtb/lib-flexible/0.3.4/??flexible_css.js,flexible.js"></script>
+    </head>
+
+    <body>
+        <div class="container">
+            <header class="header content-header">
+                <a href="javascript:history.back(-1)" class="back">
+                    <i class="iconfont icon-fanhui1"></i>
+                </a>
+                <span>预约咨询</span>
+            </header>
+
+            <div class="appointments-container">
+                <div class="counselor">
+                    <div class="avatar">
+                        <img src="images/891341.jpg" alt="" />
+                    </div>
+                    <div class="name">陈一楠</div>
+                </div>
+                <div class="weui-cells__title">请选择咨询方式</div>
+                <div class="weui-cells weui-cells_radio">
+                    <label class="weui-cell weui-check__label" for="x11">
+                        <div class="weui-cell__hd">
+                            <i class="iconfont icon-shipin1"></i>
+                        </div>
+                        <div class="weui-cell__bd">
+                            <p>视频</p>
+                            <span class="price">￥500/次</span>
+                        </div>
+                        <div class="weui-cell__ft">
+                            <input type="radio" class="weui-check" name="radio1" id="x11" checked="checked">
+                            <span class="weui-icon-checked"></span>
+                        </div>
+                    </label>
+                    <label class="weui-cell weui-check__label" for="x12">
+                         <div class="weui-cell__hd">
+                            <i class="iconfont icon-yuyin4"></i>
+                        </div>
+                        <div class="weui-cell__bd">
+                            <p>语音</p>
+                            <span class="price">￥500/次</span>
+                        </div>
+                        <div class="weui-cell__ft">
+                            <input type="radio" name="radio1" class="weui-check" id="x12" >
+                            <span class="weui-icon-checked"></span>
+                        </div>
+                    </label>
+                    <label class="weui-cell weui-check__label" for="x13">
+                         <div class="weui-cell__hd">
+                            <i class="iconfont icon-mianduimianjieyue"></i>
+                        </div>
+                        <div class="weui-cell__bd">
+                            <p>面对面</p>
+                            <span class="price">￥500/次</span>
+                        </div>
+                        <div class="weui-cell__ft">
+                            <input type="radio" name="radio1" class="weui-check" id="x13" >
+                            <span class="weui-icon-checked"></span>
+                        </div>
+                    </label>
+                </div>
+                <!--<div class="weui-cells">-->
+                    <div class="weui-cell">
+                        <div class="weui-cell__bd">
+                            <p>咨询次数</p>
+                        </div>
+                        <div class="weui-cell__ft">
+                            <div class="input-group">
+                                <span>-</span>
+                                <input type="" name="" id="" value="1" />
+                                <span>+</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="weui-cell">
+                        <div class="weui-cell__bd">
+                            <p>联系方式</p>
+                        </div>
+                        <div class="weui-cell__ft">12031212213</div>
+                    </div>
+                <!--</div>-->
+                <div class="counsel-title weui-cell">问题描述：</div>
+                <div class="counsel-content weui-cell">
+                    <div class="weui-cell__bd">
+                        <textarea class="weui-textarea" placeholder="请简要描述你需要咨询的内容，以及期待达到的咨询目标" rows="5"></textarea>
+                        <!--<div class="weui-textarea-counter"><span>0</span>/300</div>-->
+                    </div>
+                </div>
+            </div>
+            <div class="appointments-footer">
+                <div class="price">
+                    总计：<span>￥600</span>
+                </div>
+                <div class="pay">
+                    支付
+                </div>
+            </div>
+        </div>
+    </body>
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/index.js"></script>
+
+</html>

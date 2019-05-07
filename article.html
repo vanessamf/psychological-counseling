@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0,minimum-scale=1.0,user-scalable=0" />
+        <title>文章详情</title>
+        <link rel="stylesheet" type="text/css" href="css/weui.min.css" />
+        <link rel="stylesheet" type="text/css" href="css/reset.css" />
+        <link rel="stylesheet" type="text/css" href="css/index.css" />
+        <link rel="stylesheet" type="text/css" href="fonts/iconfont.css" />
+        <script src="http://g.tbcdn.cn/mtb/lib-flexible/0.3.4/??flexible_css.js,flexible.js"></script>
+    </head>
+
+    <body>
+        <div class="container">
+            <header class="header content-header">
+                <a href="javascript:history.back(-1)" class="back">
+                    <i class="iconfont icon-fanhui1"></i>
+                </a>
+                <span>文章详情</span>
+            </header>
+            <div class="article-container">
+                <div class="article-header">
+                    <img src="images/891337.jpg" alt="" class="bg-img">
+                </div>
+                <div class="page article js_show">
+                    <div class="page__hd">
+                        <h1 class="page__title">学会拐弯才是人生大智慧</h1>
+                        <!--<p class="page__desc">文章</p>-->
+                        <div class="page-info">
+                            <span>李程/心理咨询师</span>
+                            <span class="time">2019-02-24</span>
+                            <span>阅读量：15213</span>
+                        </div>
+                    </div>
+                    <div class="page__bd">
+                        <article class="weui-article">
+                            <!--<h1>学会拐弯才是人生大智慧</h1>-->
+                            <section>
+                                <p>
+                                    人生天地间，路路九曲弯，从来没有笔直的。水能直至大海，就是因为它巧妙地避开所有障碍，不断拐弯前行。 许多聪明人没能走上成功之路，不少是因为撞了南墙不回头。 人生路上难免会遇到困难，拐个弯，绕一绕何尝不是个办法。 山不转，路转；路不转，人转。只要心念一转，逆境也能成机遇。只要你心里拐个弯，就会路随心而转从而超越自我，开创新的天地。
+                                </p>
+                                <p>
+                                    前进需要勇气，拐弯需要智慧。路不通时，选择拐弯，心不快时，选择看淡；情渐远时，选择随意。
+                                </p>
+                                <p>
+                                    人生之路，有崎岖有平坦，总有许多沟坎需要跨越；生活之味，有苦辣有甘甜，总有许多咸涩需要品尝。
+                                </p>
+                                <p>
+                                    旅途在前进时候总有拐弯的地方，面对痛苦，无需躲避；不避生活百态，坦然面对。 做一枝倾情绽放的花朵，盛开时无须肆意遮掩，凋零时坦然面对凄凉，用简单快乐之心，笑迎人生。
+                                </p>
+                                <p>
+                                    成全他人，就是成全自己，少生气，多争气。对于漫漫人生路来说，看得清比走得快更重要，因为走得对才能走得远。
+                                </p>
+                            </section>
+                        </article>
+                    </div>
+                    <!--<div class="page__ft">
+                        <a href="javascript:home()"><img src="./images/icon_footer_link.png"></a>
+                    </div>-->
+                </div>
+            </div>
+            <div class="article-footer weui-search-bar zxs-search-bar" id="searchBar">
+                <form class="weui-search-bar__form">
+                    <div class="weui-search-bar__box">
+                        <input type="search" class="weui-search-bar__input" id="searchInput" placeholder="写点什么" required="">
+                        <a href="javascript:" class="weui-icon-clear" id="searchClear"></a>
+                    </div>
+                </form>
+                <div class="handle">
+                	 <div class="like active">
+                	     <i class="iconfont icon-dianzan-copy"></i>
+                	     4521
+                	 </div>
+                	 <div class="collect">
+                	    <i class="iconfont icon-shoucang"></i>
+                	    收藏
+                	 </div>
+                </div>
+            </div>
+        </div>
+    </body>
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/index.js"></script>
+    <script type="text/javascript" class="searchbar js_show">
+        $(function() {
+            var $searchBar = $('#searchBar'),
+                $searchResult = $('#searchResult'),
+                $searchText = $('#searchText'),
+                $searchInput = $('#searchInput'),
+                $searchClear = $('#searchClear'),
+                $searchCancel = $('#searchCancel');
+
+            function hideSearchResult() {
+                $searchResult.hide();
+                $searchInput.val('');
+            }
+
+            $searchClear.on('click', function() {
+                hideSearchResult();
+                $searchInput.focus();
+            });
+        });
+    </script>
+    <script type="text/javascript">
+     $(".article-footer .handle div").on('click', function() {
+         $(this).toggleClass("active");
+      });
+    </script>
+</html>

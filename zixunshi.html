@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0,minimum-scale=1.0,user-scalable=0" />
+		<title>咨询师</title>
+        <link rel="stylesheet" type="text/css" href="css/weui.min.css" />
+        <link rel="stylesheet" type="text/css" href="css/reset.css" />
+		<link rel="stylesheet" type="text/css" href="css/index.css" />
+		 <link rel="stylesheet" type="text/css" href="fonts/iconfont.css" />
+		<script src="http://g.tbcdn.cn/mtb/lib-flexible/0.3.4/??flexible_css.js,flexible.js"></script>
+	</head>
+	<body>
+	      <div class="container">
+	          <div class="weui-search-bar zxs-search-bar " id="searchBar">
+                <form class="weui-search-bar__form">
+                    <div class="weui-search-bar__box">
+                        <i class="weui-icon-search"></i>
+                        <input type="search" class="weui-search-bar__input" id="searchInput" placeholder="搜索" required="">
+                        <a href="javascript:" class="weui-icon-clear" id="searchClear"></a>
+                    </div>
+                    <!--<div id="searchText">
+                    	 <i class="weui-icon-search"></i>
+                    </div>-->
+                   
+                    <label class="weui-search-bar__label" >
+                        咨询师
+                        <i class="weui-icon-search" id="searchText"></i>
+                    </label>
+                </form>
+                <a href="javascript:" class="weui-search-bar__cancel-btn" id="searchCancel">取消</a>
+            </div>
+            <div class="filter-container">
+                <div class="filter-sort weui-flex">
+                    <a href="javascript:void(0);" class="sort-item weui-flex__item"data-name="filter-topic">
+                        <span>话题</span>
+                        <i class="iconfont icon-31shouqi"></i>
+                    </a>
+                    <a href="javascript:void(0);" class="sort-item weui-flex__item " data-name="filter-rank">
+                        <span>排名</span>
+                        <i class="iconfont icon-31xiala"></i>
+                    </a>
+                    <a href="javascript:void(0);" class="sort-item weui-flex__item"data-name="filter-area">
+                        <span>地区</span>
+                        <i class="iconfont icon-31xiala"></i>
+                    </a>
+                </div>
+                <div class="filter-mask"></div>
+                <div class="filter-content">
+                    <div class="filter-list filter-topic">
+                        <a href="javascript:void(0);" class="active">
+                            <span>婚姻挽回</span>
+                        </a>
+                        <a href="javascript:void(0);" >
+                            <span>情绪压力</span>
+                        </a>
+                        <a href="javascript:void(0);" >
+                            <span>人际关系</span>
+                        </a>
+                    </div>
+                    <div class="filter-list filter-rank ">
+                        <a href="javascript:void(0);" class="active">
+                            <span>综合排序</span>
+                        </a>
+                        <a href="javascript:void(0);" >
+                            <span>首单立减</span>
+                        </a>
+                    </div>
+                    <div class="filter-list filter-area">
+                        <a href="javascript:void(0);" class="active">
+                            <span>上海</span>
+                        </a>
+                        <a href="javascript:void(0);" >
+                            <span>首单立减</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="expert-list">
+                <div class="weui-panel">
+                    <a href="zixunshiDetail.html" class="expert-item weui-media-box weui-media-box_appmsg">
+                        <div class="weui-media-box__hd">
+                            <img class="weui-media-box__thumb" src="images/891337.jpg" alt="">
+                        </div>
+                        <div class="weui-media-box__bd">
+                            <div class="introduce weui-flex">
+                                <div class="name">
+                                    <h4 class="weui-media-box__title">杨佳慧</h4>
+                                    <p class="weui-media-box__desc">国家二级咨询心理师</p>
+                                </div>
+                                <div class="btn">
+                                    预约
+                                </div>
+                            </div>
+                            <div class="specialist">
+                                <span>婚姻挽回</span>
+                                <span>情绪压力</span>
+                                <span>人际关系</span>
+                                <span>人际关系</span>
+                            </div>
+                            <ul class="weui-media-box__info">
+                                <li class="weui-media-box__info__meta">
+                                       咨询次数：4271
+                                </li>
+                                <li class="weui-media-box__info__meta">好评率：100%</li>
+                            </ul>
+                        </div>
+                    </a>
+                </div>
+                <div class="weui-panel">
+                    <a href="javascript:void(0);" class="expert-item weui-media-box weui-media-box_appmsg">
+                        <div class="weui-media-box__hd">
+                            <img class="weui-media-box__thumb" src="images/891337.jpg" alt="">
+                        </div>
+                        <div class="weui-media-box__bd">
+                            <div class="introduce weui-flex">
+                                <div class="name">
+                                    <h4 class="weui-media-box__title">杨佳慧</h4>
+                                    <p class="weui-media-box__desc">国家二级咨询心理师</p>
+                                </div>
+                                <div class="btn">
+                                    预约
+                                </div>
+                            </div>
+                            <div class="specialist">
+                                <span>婚姻挽回</span>
+                                <span>情绪压力</span>
+                                <span>人际关系</span>
+                                <span>人际关系</span>
+                            </div>
+                            <ul class="weui-media-box__info">
+                                <li class="weui-media-box__info__meta">
+                                       咨询次数：4271
+                                </li>
+                                <li class="weui-media-box__info__meta">好评率：100%</li>
+                            </ul>
+                        </div>
+                    </a>
+                </div>
+                <div class="weui-panel">
+                    <a href="javascript:void(0);" class="expert-item weui-media-box weui-media-box_appmsg">
+                        <div class="weui-media-box__hd">
+                            <img class="weui-media-box__thumb" src="images/891339.jpg" alt="">
+                        </div>
+                        <div class="weui-media-box__bd">
+                            <div class="introduce weui-flex">
+                                <div class="name">
+                                    <h4 class="weui-media-box__title">杨佳慧</h4>
+                                    <p class="weui-media-box__desc">国家二级咨询心理师</p>
+                                </div>
+                                <div class="btn">
+                                    预约
+                                </div>
+                            </div>
+                            <div class="specialist">
+                                <span>婚姻挽回</span>
+                                <span>情绪压力</span>
+                                <span>人际关系</span>
+                                <span>人际关系</span>
+                            </div>
+                            <ul class="weui-media-box__info">
+                                <li class="weui-media-box__info__meta">
+                                       咨询次数：4271
+                                </li>
+                                <li class="weui-media-box__info__meta">好评率：100%</li>
+                            </ul>
+                        </div>
+                    </a>
+                </div>
+                <div class="weui-panel">
+                    <a href="javascript:void(0);" class="expert-item weui-media-box weui-media-box_appmsg">
+                        <div class="weui-media-box__hd">
+                            <img class="weui-media-box__thumb" src="images/891341.jpg" alt="">
+                        </div>
+                        <div class="weui-media-box__bd">
+                            <div class="introduce weui-flex">
+                                <div class="name">
+                                    <h4 class="weui-media-box__title">杨佳慧</h4>
+                                    <p class="weui-media-box__desc">国家二级咨询心理师</p>
+                                </div>
+                                <div class="btn btn-disabled">
+                                    预约
+                                </div>
+                            </div>
+                            <div class="specialist">
+                                <span>婚姻挽回</span>
+                                <span>情绪压力</span>
+                                <span>人际关系</span>
+                                <span>人际关系</span>
+                            </div>
+                            <ul class="weui-media-box__info">
+                                <li class="weui-media-box__info__meta">
+                                       咨询次数：4271
+                                </li>
+                                <li class="weui-media-box__info__meta">好评率：100%</li>
+                            </ul>
+                        </div>
+                    </a>
+                </div>
+                <div class="weui-panel">
+                    <a href="javascript:void(0);" class="expert-item weui-media-box weui-media-box_appmsg">
+                        <div class="weui-media-box__hd">
+                            <img class="weui-media-box__thumb" src="images/891343.jpg" alt="">
+                        </div>
+                        <div class="weui-media-box__bd">
+                            <div class="introduce weui-flex">
+                                <div class="name">
+                                    <h4 class="weui-media-box__title">杨佳慧</h4>
+                                    <p class="weui-media-box__desc">国家二级咨询心理师</p>
+                                </div>
+                                <div class="btn">
+                                    预约
+                                </div>
+                            </div>
+                            <div class="specialist">
+                                <span>婚姻挽回</span>
+                                <span>情绪压力</span>
+                                <span>人际关系</span>
+                                <span>人际关系</span>
+                            </div>
+                            <ul class="weui-media-box__info">
+                                <li class="weui-media-box__info__meta">
+                                       咨询次数：4271
+                                </li>
+                                <li class="weui-media-box__info__meta">好评率：100%</li>
+                            </ul>
+                        </div>
+                    </a>
+                </div>
+            </div>
+	       <div class="weui-tabbar">
+                <a href="index.html" class="weui-tabbar__item">
+                    <span style="display: inline-block;position: relative;">
+                        <i  alt="" class="weui-tabbar__icon"></i>
+                        <span class="weui-badge" style="position: absolute;top: -2px;right: -13px;">8</span>
+                    </span>
+                    <p class="weui-tabbar__label">首页</p>
+                </a>
+                <a href="zixunshi.html" class="weui-tabbar__item  weui-bar__item_on">
+                    <i alt="" class="weui-tabbar__icon"></i>
+                    <p class="weui-tabbar__label">咨询师</p>
+                </a>
+                <a href="xiaoxi.html" class="weui-tabbar__item">
+                    <span style="display: inline-block;position: relative;">
+                         <i  alt="" class="weui-tabbar__icon"></i>
+                        <span class="weui-badge weui-badge_dot" style="position: absolute;top: 0;right: -6px;"></span>
+                    </span>
+                    <p class="weui-tabbar__label">消息</p>
+                </a>
+                <a href="user.html" class="weui-tabbar__item">
+                    <i alt="" class="weui-tabbar__icon"></i>
+                    <p class="weui-tabbar__label">我的</p>
+                </a>
+            </div>
+	      </div>
+	      
+	</body>
+	<script src="js/jquery-3.3.1.min.js"></script>
+	<script src="js/index.js"></script>
+	<script type="text/javascript" class="searchbar js_show">
+        $(function() {
+            var $searchBar = $('#searchBar'),
+                $searchResult = $('#searchResult'),
+                $searchText = $('#searchText'),
+                $searchInput = $('#searchInput'),
+                $searchClear = $('#searchClear'),
+                $searchCancel = $('#searchCancel');
+
+            function hideSearchResult() {
+                $searchResult.hide();
+                $searchInput.val('');
+            }
+
+            function cancelSearch() {
+                hideSearchResult();
+                $searchBar.removeClass('weui-search-bar_focusing');
+                $searchText.show();
+            }
+
+            $searchText.on('click', function() {
+                $searchBar.addClass('weui-search-bar_focusing');
+                $searchInput.focus();
+            });
+            $searchInput
+                .on('blur', function() {
+                    if(!this.value.length) cancelSearch();
+                })
+                .on('input', function() {
+                    if(this.value.length) {
+                        $searchResult.show();
+                    } else {
+                        $searchResult.hide();
+                    }
+                });
+            $searchClear.on('click', function() {
+                hideSearchResult();
+                $searchInput.focus();
+            });
+            $searchCancel.on('click', function() {
+                cancelSearch();
+                $searchInput.blur();
+            });
+        });
+    </script>
+    <script>
+        $(".filter-sort .sort-item").on('click',function(){
+            $(this).toggleClass("active");
+            $(this).siblings(".sort-item").removeClass("active");
+           
+            var curClass=$(this).attr("data-name");
+            $("."+curClass).toggleClass("active");
+            $("."+curClass).siblings(".filter-list").removeClass("active");
+            $("."+curClass).siblings(".filter-list").css("transition","transform .1s");
+            if($(this).hasClass("active")){
+                $(".filter-mask").show();
+                 $("."+curClass).css("transition","transform .3s");
+            }else{
+                $(".filter-mask").hide();
+            }
+        })
+        $(".filter-list a").on('click',function(){
+            $(this).addClass("active");
+            $(this).siblings("a").removeClass("active");
+            
+            $(".filter-mask").hide();
+            $(".filter-sort .sort-item").removeClass("active");
+            $(".filter-list ").removeClass("active");
+        })
+         $(".filter-mask").on('click',function(){
+            $(this).hide();
+            $(".filter-list ").removeClass("active");
+            $(".filter-sort .sort-item").removeClass("active");
+        })
+    </script>
+</html>
