@@ -1424,7 +1424,7 @@
 }
  .chat-container .item{
      display: flex;
-     align-items: center;
+     /*align-items: center;*/
      margin-bottom:0.32432432432432434rem;
 }
  .chat-container .item.item-r{
@@ -1440,6 +1440,8 @@
      border-radius: 0.13513513513513514rem;
 }
  .chat-container .item .box{
+     display: flex;
+     align-items: center;
      position: relative;
      padding:0.2702702702702703rem 0.32432432432432434rem;
      margin-left:0.40540540540540543rem;
